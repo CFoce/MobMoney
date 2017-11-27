@@ -1,0 +1,168 @@
+#Don't edit the Version.
+Version: 1
+
+#Enable/disable messages when you kill a mob
+Message-Enabled: true
+#Message sent to a player who just killed a mob
+#Replacements can be used: colors &(1-9 | a-f) words %(p | e | M | m)% p = player, e = entity, M = major money, m = minor money
+Message: "&7You killed an %e% and earned %M% gold and %m% copper!"
+#Minor currency enabled 1.11 major = 1 minor = 11
+Minor: true
+
+#Enable cash for ways mobs have been spawned
+Enable:
+    Spawners: false
+    Egg: false
+    Breeding: false
+    Natural: true
+    Slime-Split: false
+    Mobs: true
+    Player: false
+    #other plugins mobs
+    Custom: false 
+        
+#Worlds that the plugin is disabled in and if you want any disabled
+#leave false if you want this off
+Worlds-Disable: false 
+Worlds:
+    - example
+        
+#Settings for the amount of cash players get for killing mobs
+Mobs:
+    #Group Mob Settings
+    #This is for people who want to set the same price for all mobs in a group
+    Group-Settings:
+        #if set to false Individual Mob Settings will be enabled
+        Enabled: false
+        Friendly-Mobs:
+            min: 5
+            max: 5
+        Agressive-Mobs:
+            min: 10
+            max: 10
+        Bosses:
+            min: 40
+            max: 40
+            
+            
+        #Individual Mob Settings 
+        #Format min | max <value>
+        #If you want the disable the mob put 0 as the amount for min and max value
+    Friendly-Mobs:
+        Bat:
+            min: 3
+            max: 3
+        Chicken:
+            min: 3
+            max: 3
+        Cow:
+            min: 3
+            max: 3
+        Horse:
+            min: 3
+            max: 3
+        Mushroom Cow:
+            min: 3
+            max: 3
+        Ocelot:
+            min: 3
+            max: 3
+        Pig:
+            min: 3
+            max: 3
+        Rabbit:
+            min: 3
+            max: 3
+        Sheep:
+            min: 3
+            max: 3
+        Squid:
+            min: 3
+            max: 3
+        Villager:
+            min: 3
+            max: 3
+            
+    Agressive-Mobs:
+        Blaze:
+            min: 10
+            max: 10
+        Cave Spider:
+            min: 10
+            max: 10
+        Creeper:
+            min: 10
+            max: 10
+        Enderman:
+            min: 10
+            max: 10
+        Endermite:
+            min: 10
+            max: 10
+        Ghast:
+            min: 10
+            max: 10
+        Giant:
+            min: 10
+            max: 10
+        Guardian:
+            min: 10
+            max: 10
+        Iron Golem:
+            min: 10
+            max: 10
+        Magma Cube:
+            min: 10
+            max: 10
+        Zombie Pigman:
+            min: 10
+            max: 10
+        Silver Fish:
+            min: 10
+            max: 10
+        Skeleton:
+            min: 10
+            max: 10
+        Slime:
+            min: 10
+            max: 10
+        Snowman:
+            min: 10
+            max: 10
+        Spider:
+            min: 10
+            max: 10
+        Witch:
+            min: 10
+            max: 10
+        Wolf:
+            min: 10
+            max: 10
+        Zombie:
+            min: 10
+            max: 10
+            
+    Bosses:
+        Ender Dragon:
+            min: 40
+            max: 40
+        Wither:
+            min: 40
+            max: 40
+    Player:
+        #How much should killer get?
+        #Message victim = %v%, killer = %k%, major money = %M%, minor money = %m%:
+        Killer:
+            min: 10
+            max: 10
+            Enabled: true
+            Message: "&7You killed %v% and gained %M% gold and %m% copper!"
+        #How much should killed player lose?
+        Victim:
+            min: 10
+            max: 10
+            Enabled: true
+            Message: "&7You were killed by %k% and lost %M% gold and %m% copper!"
+           
+                
+                
