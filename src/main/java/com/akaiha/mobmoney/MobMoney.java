@@ -47,11 +47,11 @@ public class MobMoney extends JavaPlugin {
 		if (economyProvider != null) {
 			economy = economyProvider.getProvider();
 			if (economy != null) {
-				getLogger().info("Vault Economy Available.");
+				getLogger().info("Economy Available.");
 				return true;
 			}
 		}
-		getLogger().warning("Vault Economy Unavailable.");
+		getLogger().warning("Economy Unavailable.");
 		getServer().getPluginManager().disablePlugin(this);
 		return false;
 	}

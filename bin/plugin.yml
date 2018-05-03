@@ -1,6 +1,6 @@
 name: MobMoney
 author: Akaiha
 main: com.akaiha.mobmoney.MobMoney
-version: 1.0.1
+version: 1.0.3
 description: MobMoney players money for killing stuff.
 depend: [Vault]
